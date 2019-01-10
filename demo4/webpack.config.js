@@ -7,7 +7,7 @@ module.exports = {
         index: './src/index.js',
     },
     output: {
-        filename: '[name].bundle.js'
+        filename: '[name].[hash:8].bundle.js'
     },
     plugins: [
         new webpack.BannerPlugin('Hello World'),
