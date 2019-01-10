@@ -23539,7 +23539,7 @@ var insertInto;
 
 
 
-var options = {"sourceMap":true,"hmr":true}
+var options = {"hmr":true}
 
 options.transform = transform
 options.insertInto = undefined;
@@ -23554,9 +23554,9 @@ if(false) {}
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(15)(true);
+exports = module.exports = __webpack_require__(15)(false);
 // Module
-exports.push([module.i, "body {\n  background: red; }\n", "",{"version":3,"sources":["E:/git/webpack4-share-demo/demo3/src/src/index.scss"],"names":[],"mappings":"AAAA;EACI,gBAAc,EACjB","file":"index.scss","sourcesContent":["body{\r\n    background:red;\r\n}"],"sourceRoot":""}]);
+exports.push([module.i, "body {\n  background: red; }\n", ""]);
 
 
 
