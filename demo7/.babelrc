@@ -1,0 +1,11 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env" //根据配置的目标浏览器或者运行环境来自动转换es6代码
+		],
+		"@babel/preset-react" //转换jsx语法
+	]
+	// "plugins": [
+	//     "react-hot-loader/babel"
+	// ]
+}
