@@ -13,7 +13,7 @@ module.exports = webpackMerge(webpackBaseConfig, {
 		filename: 'js/[name].[chunkhash:8].js',
 		chunkFilename: 'js/[name].[chunkhash:8].js',
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '//jxc.abiz.com/'
+		publicPath: '/'
 	},
 	module: {
 		rules: [

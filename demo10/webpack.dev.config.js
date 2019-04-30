@@ -3,8 +3,6 @@ const webpackMerge = require('webpack-merge');
 const path = require('path');
 const webpackBaseConfig = require('./webpack.base.config');
 
-//如果需要使用ip访问可以在这里配置自己的ip
-
 module.exports = webpackMerge(webpackBaseConfig, {
 	mode: 'development',
 	output: {
