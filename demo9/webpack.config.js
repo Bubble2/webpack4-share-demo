@@ -9,6 +9,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name].[hash:8].js'
+		// publicPath: '/dist/'
 	},
 	devtool: 'cheap-module-eval-source-map',
 	devServer: {
@@ -17,9 +18,9 @@ module.exports = {
 		disableHostCheck: true, //绕过主机检查
 		host: '0.0.0.0', //如果你希望服务器外部可访问
 		// hot: true, // 模块热替换,必须要配合webpack.HotModuleReplacementPlugin插件使用
-		historyApiFallback: true, //当使用 HTML5 History API 时，任意的 404 响应都可能需要被替代为 index.html
-		publicPath: '/', //提供静态资源的路径
-		contentBase: '/' //提供服务的路径
+		historyApiFallback: true //当使用 HTML5 History API 时，任意的 404 响应都可能需要被替代为 index.html
+		// publicPath: '/dist/', //用来本地服务拦截带publicPath开头的请求的
+		// contentBase: '/dist/abc/' //用来指定被访问html页面所在目录的
 	},
 	module: {
 		rules: [
@@ -68,6 +69,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: '百卓优采云进销存软件',
 			filename: 'index.html',
+			// filename: 'abc/index.html', //注意此处生成的html路径为//dist/abc/index.html
 			template: 'src/index.html',
 			favicon: 'src/favicon.ico'
 			// inject: false
